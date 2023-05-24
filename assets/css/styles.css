@@ -1,0 +1,57 @@
+.shobwabe {
+  height: 400px;
+  background: #232526;
+  background: -webkit-linear-gradient(to bottom,
+      hsla(210, 3%, 26%, 0.8),
+      hsl(200, 4%, 14%, 0.5)),
+    url(https://cdn.pixabay.com/index/2023/03/24/01-15-11-815_1920x550.jpg);
+  background: linear-gradient(to bottom,
+      hsla(210, 3%, 26%, 0.8),
+      hsla(200, 4%, 14%, 0.5)),
+    url(https://cdn.pixabay.com/index/2023/03/24/01-15-11-815_1920x550.jpg);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+figure {
+  position: relative;
+  height: 200px;
+}
+
+figure > img {
+  background: url(https://pixabay.com/static/img/transparency_grid.svg);
+  width: 100%;
+  height: 100%;
+  border: none;
+  object-fit: cover;
+}
+
+figcaption {
+  position: absolute;
+  background: rgb(0,0,0);
+  background: linear-gradient(
+    180deg,
+    rgba(0,0,0,0.8) 0%,
+    rgba(55,56,56,0.40379901960784315) 50%,
+    rgba(0,0,0,0.8) 100%);
+  transition: all 0.2s ease-in-out;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  /*transition: opacity 2s;*/
+}
+
+figure:hover figcaption {
+  opacity: 1;
+}
+
+.pixabay{
+  width: 150px;
+}
+
+.categories_2344 {
+  list-style: none;
+}
